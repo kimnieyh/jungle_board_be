@@ -1,6 +1,6 @@
-package com.example.demo.controller;
+package jungle.board.controller;
 
-import com.example.demo.service.Greeting;
+import jungle.board.service.Greeting;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
