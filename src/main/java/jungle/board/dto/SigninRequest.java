@@ -5,19 +5,17 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-public class SignupRequest {
+public class SigninRequest {
     private String id;
     private String password;
-    private String name;
 
     public Member toEntity(){
         return Member.builder()
                 .userId(id)
                 .password(password)
-                .name(name)
                 .build();
     }
 }

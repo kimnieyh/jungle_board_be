@@ -6,4 +6,7 @@ public interface MemberRepository extends CrudRepository<Member,Long> {
 
     List<Member> findByName(String name);
     Member findById(long id);
+    boolean existsByUserId(String user_id);
+
+    Member findTopByUserId(String user_id);
 }
